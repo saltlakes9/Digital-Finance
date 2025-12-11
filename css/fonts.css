@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: bold;
+    font-weight: 900;
+    font-display: swap;
+    src: url("../fonts/FiraSans-Black.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../fonts/FiraSans-ExtraBold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/FiraSans-Bold.ttf") format("opentype");
+}
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/FiraSans-SemiBold.ttf") format("opentype");
+}
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/FiraSans-Medium.ttf") format("opentype");
+}
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/FiraSans-Regular.ttf") format("opentype");
+}

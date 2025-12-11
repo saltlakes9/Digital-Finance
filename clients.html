@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/clients.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container-fluid">
+            <a href="#" class="logo">
+              <img src="./img/bank-logo.png" class="img-fluid" alt="logo" />
+            </a>
+            <!-- <form>
+              <input type="text-head" name="search" placeholder="Search..." />
+            </form> -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link home-item scrollto" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link home-item scrollto" href="./info.html"
+                    >Info</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto" href="./feautures.html"
+                    >Feautures</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto" href="./clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+            <a onclick="openModal()">
+              <img
+                src="./img/user.png"
+                class="img-login"
+                alt="login"
+                id="user"
+              />
+            </a>
+
+            <div id="auth-modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title">Create an account</h2>
+
+                <form id="register-form">
+                  <div class="left">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      minlength="9"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="submit">Create</button>
+                </form>
+
+                <form id="login-form" style="display: none">
+                  <div class="left">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="login-password">Password</label>
+                    <input
+                      type="password"
+                      id="login-password"
+                      name="login-password"
+                      minlength="9"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="submit">Login</button>
+                </form>
+
+                <p id="switch-text">
+                  Already have an account?
+                  <a href="javascript:void(0);" onclick="toggleForms()"
+                    >Login</a
+                  >
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="clients-page">
+    <header class="clients-hero text-center py-6">
+        <div class="container">
+            <h1 class="display-3">Institutional Grade. Personal Focus.</h1>
+            <p class="lead mt-4">The only financial platform engineered to manage significant private capital and corporate treasury with the convergence of traditional banking compliance and digital asset growth.</p>
+        </div>
+    </header>
+
+    <section id="trust-metrics" class="py-5 bg-light-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our scale ensures your stability.</h2>
+            <div class="row text-center">
+                <div class="col-md-3 metric-item">
+                    <div class="metric-number">$X B ILLION</div>
+                    <div class="metric-label">Assets Under Management</div>
+                </div>
+                <div class="col-md-3 metric-item">
+                    <div class="metric-number">99.99%</div>
+                    <div class="metric-label">Platform Uptime Guarantee</div>
+                </div>
+                <div class="col-md-3 metric-item">
+                    <div class="metric-number">50+</div>
+                    <div class="metric-label">Jurisdictions Served</div>
+                </div>
+                <div class="col-md-3 metric-item">
+                    <div class="metric-number">$Y TRILLION</div>
+                    <div class="metric-label">Total Trading Volume Processed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="segmented-services" class="py-6">
+        <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-6 service-block institutional">
+                    <h3 class="service-title">The Treasury of the Future.</h3>
+                    <p class="service-text">Equip your finance department with the tools to manage both crypto and fiat on a single compliant ledger.</p>
+                    <ul class="feature-list">
+                        <li><i class="icon-api"></i> Dedicated API Access: Custom endpoints for seamless integration.</li>
+                        <li><i class="icon-liquidity"></i> Corporate Liquidity: Access deep liquidity pools for large-volume OTC trades.</li>
+                        <li><i class="icon-compliance"></i> Compliance & Reporting: Streamlined, audit-ready reports for regulatory filing.</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 service-block private-client">
+                    <h3 class="service-title">Bespoke Wealth Management.</h3>
+                    <p class="service-text">Experience financial planning where digital assets are integrated into your long-term legacy strategy.</p>
+                    <ul class="feature-list">
+                        <li><i class="icon-manager"></i> Personal Relationship Manager: Direct access to a dedicated expert.</li>
+                        <li><i class="icon-apy"></i> Exclusive APY Tiers: Access the highest interest-earning tiers.</li>
+                        <li><i class="icon-venture"></i> Venture Access: Opportunities to participate in curated early-stage deals.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5 bg-light-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Trusted by Visionaries.</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 testimonial-card">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Switching our corporate treasury to [Bank Name] reduced our compliance overhead by 30% while opening up new yield opportunities. The integration was flawless."</p>
+                        <footer class="blockquote-footer mt-3">Jane Doe, <cite title="Source Title">CFO, Nexus Innovations</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-consultation" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-3">Begin a partnership built on stability, innovation, and expertise.</h2>
+            <a href="/contact/private" class="btn btn-primary-cta">Schedule a Private Consultation</a>
+        </div>
+    </section>
+</main>
+    
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Currency Rates</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Personal Banking</a></li>
+            <li><a href="#">Crypto Wallet</a></li>
+            <li><a href="#">Wire Transfers</a></li>
+            <li><a href="#">Exchange Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Choose Your Country & Language</h3>
+          <form>
+            <label for="country">Country</label>
+            <select id="country">
+              <option class="netherlands">Netherlands</option>
+            </select>
+            <label for="language">Language</label>
+            <select id="language">
+              <option>English</option>
+              <option>Українська</option>
+              <option>Duetcsh</option>
+            </select>
+            <button type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-social">
+        <p>Need Help? You Can Call Us</p>
+        <p>+31 (0)202415948</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/?locale=uk_UA"
+            ><img src="./img/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./img/social.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jQuery-v3.6.0.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

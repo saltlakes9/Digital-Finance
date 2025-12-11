@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container-fluid">
+            <a href="#" class="logo">
+              <img src="./img/bank-logo.png" class="img-fluid" alt="logo" />
+            </a>
+            <!-- <form>
+              <input type="text-head" name="search" placeholder="Search..." />
+            </form> -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link home-item scrollto" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link home-item scrollto" href="./info.html"
+                    >Info</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto" href="./feautures.html"
+                    >Feautures</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto" href="./clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+            <a onclick="openModal()">
+              <img
+                src="./img/user.png"
+                class="img-login"
+                alt="login"
+                id="user"
+              />
+            </a>
+
+            <div id="auth-modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title">Create an account</h2>
+
+                <form id="register-form">
+                  <div class="left">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      minlength="9"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="submit">Create</button>
+                </form>
+
+                <form id="login-form" style="display: none">
+                  <div class="left">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="login-password">Password</label>
+                    <input
+                      type="password"
+                      id="login-password"
+                      name="login-password"
+                      minlength="9"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="submit">Login</button>
+                </form>
+
+                <p id="switch-text">
+                  Already have an account?
+                  <a href="javascript:void(0);" onclick="toggleForms()"
+                    >Login</a
+                  >
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="top-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="content gallery">
+              <div class="slider single-item">
+                <img
+                  width="900"
+                  height="600"
+                  src="./img/close-up-hands-holding-tablet.jpg"
+                  alt="baner1"
+                  class="gallery image"
+                />
+              </div>
+              <div class="slider single-item">
+                <img
+                  width="900"
+                  height="600"
+                  src="./img/bitcoin-coin-keyboard-with-nice-background-crypto-money-concept.jpg"
+                  alt="baner2"
+                  class="gallery image"
+                />
+              </div>
+              <div class="slider single-item">
+                <img
+                  width="900"
+                  height="600"
+                  src="./img/top-view-piggy-bank-with-person-holding-bitcoin.jpg"
+                  alt="baner3"
+                  class="gallery image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slogan">
+          <h1>The Future of Banking & Crypto</h1>
+          <p style="font-weight: 100; margin-top: 27px">
+            Manage your daily finances and digital assets on one powerful, regulated platform. Fast,<br> 
+            Secure, Future-Ready. Earn yield, pay bills, and transact globally without borders.
+          </p>
+          <button class="shop__slogan">Start Today</button>
+        </div>
+        <div class="bottom-slogan">
+          <h2 style="text-transform: capitalize">
+            Stop Separating Your Money
+          </h2>
+          <p style="margin-top: 18px">
+            Why use multiple apps? Seamlessly switch between traditional <br>assets and cryptocurrencies. 
+            Get the best of both worlds with instant liquidity and deep security integration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="clients" id="Brand">
+      <div class="container">
+        <div class="section-title">
+          <p class="section-title__label">— Three Pillars of Next-Gen Finance</p>
+        </div>
+        
+    <div class="stats">
+      
+      <div class="stats__item">
+        <i class="icon-money stats__icon"></i> 
+        <h3>High-Yield Accounts</h3>
+        <p>Automatically generate **passive income** on your stablecoins and crypto assets, paid out daily. Start earning competitive APY with no lock-up periods.</p>
+        <a href="/features#yield" class="stats__link">Explore Rates →</a>
+      </div>
+
+      <div class="stats__item">
+        <i class="icon-globe stats__icon"></i>
+        <h3>Instant Global Payments</h3>
+        <p>**Move Funds Without Borders.** Send money internationally in seconds with minimal, transparent fees, bypassing slow traditional banking delays.</p>
+        <a href="/features#payments" class="stats__link">View Transfer Limits →</a>
+      </div>
+
+      <div class="stats__item">
+        <i class="icon-shield stats__icon"></i>
+        <h3>Secure Hardware Wallets</h3>
+        <p>**Institutional-Grade Security.** Your assets are protected using multi-signature cold storage and advanced $2FA$ (Two-Factor Authentication) protocols.</p>
+        <a href="/features#security" class="stats__link">Review Security Policy →</a>
+      </div>
+    </div>
+  </div>
+      </div>
+    </section> -->
+
+    <section class="clients" id="Brand">
+  <div class="container">
+    <div class="section-title">
+          <p class="section-title__label">— Three Pillars of Next-Gen Finance</p>
+        </div>
+    
+    <div class="stats">
+      
+      <div class="stats__item">
+        <div class="stats__icon">
+            <img src="./img/money_18690809.png" alt="Money Icon"> 
+        </div>
+        <h3>High-Yield Accounts</h3>
+        <p>Automatically generate passive income on your stablecoins and crypto assets, paid out daily. Start earning competitive APY with no lock-up periods.</p>
+        <a href="https://www.youtube.com/watch?v=qt2Ht_Tl9Ic" class="stats__link">Explore Rates →</a>
+      </div>
+
+      <div class="stats__item">
+        <div class="stats__icon">
+            <img src="./img/internet.png" alt="Globe Icon">
+        </div>
+        <h3>Instant Global Payments</h3>
+        <p>Move Funds Without Borders. Send money internationally in seconds with minimal, transparent fees, bypassing slow traditional banking delays.</p>
+        <a href="https://share.google/K1D8v9PlGVVOxx0wU" class="stats__link">View Transfer Limits →</a>
+      </div>
+
+      <div class="stats__item">
+        <div class="stats__icon">
+            <img src="./img/shield_12795904.png" alt="Shield Icon">
+        </div>
+        <h3>Secure Hardware Wallets</h3>
+        <p>Institutional-Grade Security. Your assets are protected using multi-signature cold storage and advanced $2FA$ (Two-Factor Authentication) protocols.</p>
+        <a href="https://www.facebook.com/100064877222437/videos/%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D0%BE%D0%B7%D1%81%D1%82%D1%80%D1%96%D0%BB%D1%8F%D0%B2-%D0%B2%D1%81%D1%8E-%D0%B2%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D0%BD%D1%83-%D1%80%D0%B0%D0%B4%D1%83/1078810822320922/" class="stats__link">Review Security Policy →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Currency Rates</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Personal Banking</a></li>
+            <li><a href="#">Crypto Wallet</a></li>
+            <li><a href="#">Wire Transfers</a></li>
+            <li><a href="#">Exchange Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Choose Your Country & Language</h3>
+          <form>
+            <label for="country">Country</label>
+            <select id="country">
+              <option class="netherlands">Netherlands</option>
+            </select>
+            <label for="language">Language</label>
+            <select id="language">
+              <option>English</option>
+              <option>Українська</option>
+              <option>Duetcsh</option>
+            </select>
+            <button type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-social">
+        <p>Need Help? You Can Call Us</p>
+        <p>+31 (0)202415948</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/?locale=uk_UA"
+            ><img src="./img/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./img/social.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jQuery-v3.6.0.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-info.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container-fluid">
+            <a href="#" class="logo">
+              <img src="./img/bank-logo.png" class="img-fluid" alt="logo" />
+            </a>
+            <!-- <form>
+              <input type="text-head" name="search" placeholder="Search..." />
+            </form> -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link home-item scrollto" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link home-item scrollto" href="./pages/info.html"
+                    >Info</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto" href="./feautures.html"
+                    >Feautures</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto" href="./clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+            <a onclick="openModal()">
+              <img
+                src="./img/user.png"
+                class="img-login"
+                alt="login"
+                id="user"
+              />
+            </a>
+
+            <div id="auth-modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title">Create an account</h2>
+
+                <form id="register-form">
+                  <div class="left">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      minlength="9"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="submit">Create</button>
+                </form>
+
+                <form id="login-form" style="display: none">
+                  <div class="left">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="login-password">Password</label>
+                    <input
+                      type="password"
+                      id="login-password"
+                      name="login-password"
+                      minlength="9"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="submit">Login</button>
+                </form>
+
+                <p id="switch-text">
+                  Already have an account?
+                  <a href="javascript:void(0);" onclick="toggleForms()"
+                    >Login</a
+                  >
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="info">
+      <div class="info-container">
+        <div class="container">
+          <h3 class="headline">What Exactly is Cryptocurrency?</h3>
+        <div class="description-info">
+          <p>Cryptocurrency is a form of digital or virtual money secured by cryptography. Unlike the dollars or euros issued by central banks, 
+          crypto transactions are verified and maintained by a decentralized system, not a single authority.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 class="headline">Key Characteristics</h3>
+        <div class="stats">
+      
+      <div class="main__keys">
+        <h3>Digital</h3>
+        <p>It exists only electronically in the internet space..</p>
+      </div>
+
+      <div class="main__keys">
+        <h3>Decentralized</h3>
+        <p>No single person, bank, or government controls it.</p>
+      </div>
+
+      <div class="main__keys">
+        <h3>Cryptographic</h3>
+        <p>It uses complex encryption techniques to verify transfers and control the creation of new units.</p>
+      </div>
+    </div>
+      </div>
+        <div class="container">
+          <h3 class="headline">Common Misconception</h3>
+          <p>It's important to understand that "cryptocurrency" refers both to the digital coin (the asset) and the network (the infrastructure) that records all transactions.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay">
+      <div class="threebottles"></div>
+      </div>
+    </div>
+
+    <section class="how-work">
+      <div class="how-work-container">
+        <div class="container">
+          <h3 class="headline" style="text-align: left;">The Blockchain: Trust Without a Middleman</h3>
+          <p style="text-align: left; margin: 0 0 15px 0;" >The blockchain technology serves as the foundational mechanism for cryptocurrencies and fundamentally addresses the problem of trust in digital exchange 
+            by eliminating the need for a central authority. At its core, the blockchain is a public, shared, digital ledger. Unlike traditional centralized financial systems where the record of transactions is housed on a single bank server, the blockchain is a Distributed Ledger shared across thousands of computers, or nodes, globally. Every node in the network holds a complete copy of the entire ledger, ensuring no single point of failure and requiring consensus among the majority of participants to validate changes.</p>
+          <p style="text-align: left; margin: 0 0 15px 0;">The process begins when new cryptocurrency operations, or transactions, are gathered and grouped into 
+            collections known as blocks. Once a block is fully compiled and verified, it is assigned a unique cryptographic code called a hash. This hash is mathematically derived from all the data contained within that block, but crucially, it also incorporates the hash of the immediately preceding block in the chain.</p>
+          <p style="text-align: left; margin: 0 0 15px 0;">This method of linking blocks is what gives the technology its name and ensures immutability (tamper-proof security). If an attacker attempts to alter even a single transaction inside an old block, the block's unique hash will change. Since all subsequent blocks rely on that original hash for their own validation, the change would instantly invalidate every following block in the chain. The decentralized network can quickly identify 
+            and reject any such fraudulent chain, effectively making the record permanent and secure against unilateral modification.</p>
+          <p style="text-align: left; margin: 0 0 15px 0;">Ultimately, the blockchain replaces human reliance on a bank or centralized institution with reliance on mathematical and cryptographic verification. When a user initiates a crypto transfer, the transaction is broadcast to the network, verified by the decentralized nodes (using consensus mechanisms like Proof-of-Work or Proof-of-Stake) to confirm the sender's funds, and then permanently added to the new block. This automated and globally verifiable system removes the need for an intermediary to grant permission or confirm validity, establishing "Trust Without a Middleman."</p>
+        </div>
+        <div class="container-image">
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Currency Rates</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Personal Banking</a></li>
+            <li><a href="#">Crypto Wallet</a></li>
+            <li><a href="#">Wire Transfers</a></li>
+            <li><a href="#">Exchange Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Choose Your Country & Language</h3>
+          <form>
+            <label for="country">Country</label>
+            <select id="country">
+              <option class="netherlands">Netherlands</option>
+            </select>
+            <label for="language">Language</label>
+            <select id="language">
+              <option>English</option>
+              <option>Українська</option>
+              <option>Duetcsh</option>
+            </select>
+            <button type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-social">
+        <p>Need Help? You Can Call Us</p>
+        <p>+31 (0)202415948</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/?locale=uk_UA"
+            ><img src="./img/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./img/social.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jQuery-v3.6.0.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

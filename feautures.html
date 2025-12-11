@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/feautures.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container-fluid">
+            <a href="#" class="logo">
+              <img src="./img/bank-logo.png" class="img-fluid" alt="logo" />
+            </a>
+            <!-- <form>
+              <input type="text-head" name="search" placeholder="Search..." />
+            </form> -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link home-item scrollto" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link home-item scrollto" href="./info.html"
+                    >Info</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto" href="./clients.html"
+                    >Feautures</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto" href="./clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+            <a href="#user"  onclick="openModal()">
+              <img
+                src="./img/user.png"
+                class="img-login"
+                alt="login"
+                id="user"
+              />
+            </a>
+
+            <div id="auth-modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title">Create an account</h2>
+
+                <form id="register-form">
+                  <div class="left">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      minlength="9"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="submit">Create</button>
+                </form>
+
+                <form id="login-form" style="display: none">
+                  <div class="left">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="login-password">Password</label>
+                    <input
+                      type="password"
+                      id="login-password"
+                      name="login-password"
+                      minlength="9"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="submit">Login</button>
+                </form>
+
+                <p id="switch-text">
+                  Already have an account?
+                  <a href="javascript:void(0);" onclick="toggleForms()"
+                    >Login</a
+                  >
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="features-page">
+    <header class="features-hero">
+        <div class="container text-center py-5">
+            <h1 class="display-4">All Features. Zero Compromise.</h1>
+            <p class="lead">The only platform where traditional finance seamlessly meets digital assets. Explore the full power of Hybrid Finance.</p>
+        </div>
+    </header>
+
+    <section id="core-banking" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Your Everyday Finance. Elevated.</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                
+                <div class="col feature-card">
+                    <i class="icon-transfer feature-icon"></i>
+                    <h3>Global Payments, Instantly</h3>
+                    <p>Send and receive funds across borders in seconds, powered by DLT. Bypass traditional delays and high wire fees. Perfect for business or personal transactions.</p>
+                </div>
+                
+                <div class="col feature-card">
+                    <i class="icon-card feature-icon"></i>
+                    <h3>Spend Crypto, Seamlessly</h3>
+                    <p>Use your Visa/Mastercard anywhere. Funds are instantly converted from your crypto holdings or fiat balance at the point of sale with **zero foreign transaction fees**.</p>
+                    
+                </div>
+                
+                <div class="col feature-card">
+                    <i class="icon-budget feature-icon"></i>
+                    <h3>Effortless Financial Management</h3>
+                    <p>Connect your traditional bills and track your fiat and crypto spending in real-time on one unified, intelligent dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="crypto-services" class="py-5 bg-light-section">
+        <div class="container">
+            <h2 class="section-title">Harness the Power of Digital Assets.</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+
+                <div class="col-md-7 large-feature-block">
+                    <h3 class="crypto-title">High-Yield Accounts: Up to X% APY.</h3>
+                    <p>Put your idle stablecoins and major crypto assets to work. Interest is calculated daily and paid out weekly, generating passive income responsibly.</p>
+                    <div class="comparison-table">
+                        <p>Traditional Savings: 0.05% APY</p>
+                        <p>Our High-Yield: **X% APY**</p>
+                    </div>
+                </div>
+
+                <div class="col-md-5 small-feature-block">
+                    <h3 class="crypto-title">Secure Trading & Custody</h3>
+                    <p>Buy, hold, and trade dozens of cryptocurrencies instantly within the app. All assets benefit from our institutional-grade **multi-signature cold storage** custody solutions.</p>
+                    
+                </div>
+                
+                <div class="col-12 mt-5 loan-feature-block">
+                    <h3 class="crypto-title">Instant Liquidity: Keep Your Crypto.</h3>
+                    <p>Secure fiat loans by collateralizing your crypto assets (e.g., BTC, ETH). Access funds immediately without having to sell your long-term holdings.</p>
+                    <button class="btn btn-loan">Calculate Your Loan-to-Value (LTV)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-trust" class="py-5">
+        <div class="container">
+            
+            <div class="overlay">
+                <div class="threebottles"></div>
+            </div>
+    </div>
+
+            <div class="text-center mt-5">
+                <p class="lead">Ready to Unify Your Finance? Open an account in under 5 minutes.</p>
+                <a href="#user" class="btn btn-primary-cta">Open Account Now (It's Free)</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Currency Rates</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Personal Banking</a></li>
+            <li><a href="#">Crypto Wallet</a></li>
+            <li><a href="#">Wire Transfers</a></li>
+            <li><a href="#">Exchange Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Choose Your Country & Language</h3>
+          <form>
+            <label for="country">Country</label>
+            <select id="country">
+              <option class="netherlands">Netherlands</option>
+            </select>
+            <label for="language">Language</label>
+            <select id="language">
+              <option>English</option>
+              <option>Українська</option>
+              <option>Duetcsh</option>
+            </select>
+            <button type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-social">
+        <p>Need Help? You Can Call Us</p>
+        <p>+31 (0)202415948</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/?locale=uk_UA"
+            ><img src="./img/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./img/social.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jQuery-v3.6.0.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
